@@ -1,4 +1,6 @@
-﻿namespace projetdm1
+﻿using projetdm1.Vues;
+
+namespace projetdm1
 {
     public partial class App : Application
     {
@@ -6,7 +8,8 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new VueProduits());
+
         }
     }
 }
